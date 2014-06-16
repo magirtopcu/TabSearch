@@ -1,0 +1,25 @@
+{
+  "name": "tab selector",
+  "version": "1",
+  "manifest_version": 2,
+  "description": "Gets information from Google.",
+  "icons": { "128": "128.png" },
+  "background": {
+    "persistent": false,
+    "scripts": ["bg.js"]
+  },
+  "permissions": ["tabs"],
+  "browser_action": {
+    "default_title": "",
+    "default_icon": "128.png",
+    "default_popup": "popup.html"
+  },
+  "commands": {
+        "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+P",
+        "mac": "Command+Shift+P"
+      }
+    }
+  }
+}
